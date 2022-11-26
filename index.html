@@ -28,9 +28,9 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Research</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-th">Results</span></a></li>
+								<li><a href="#about" id="top-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#research" id="portfolio-link"><span class="icon solid fa-th">Research</span></a></li>
+								<li><a href="#results" id="about-link"><span class="icon solid fa-th">Results</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -55,25 +55,25 @@
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
+					<section id="about" class="one dark cover">
 						<div class="container">
 
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Jorge A. Mayo</strong>, <br /> a Master's in Environmental Science Student at UTEP.</h2>
-								<p>My passions include water management, remote sensing and data sampling, and 
-								environmental data-driven decision-making. Additionally, I am excited to learn and integrate 
+								<p>My passions include water management, remote sensing, data sampling and analysis, environmental data-driven 
+								decision-making, and geospatial/visualization applications. Additionally, I am excited to learn and integrate 
 								new technologies and skill sets, to better understand and tackle environmental challenges.</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Research</a>
+								<a href="#research" class="button scrolly">Research</a>
 							</footer>
 
 						</div>
 					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+				<!-- Research -->
+					<section id="research" class="two">
 						<div class="container">
 
 							<header>
@@ -82,14 +82,13 @@
 
 							<p>My research is focused on quantifying the soil moisture and evapotranspiration in dryland 
 							ecosystems (Southwestern US) through distributed hydrological simulations, remote sensing, and field measurements
-							within the Jornada Experimental Range of the U.S. Department of Agriculture <br /> in southern New Mexico, U.S.<br />
+							within the Jornada Experimental Range of the U.S. Department of <br /> Agriculture in southern New Mexico, U.S.<br />
 							
 							The model inputs can be summarized into terrain, atmospheric forcing, soil, and vegetation parameters. A small size 
 							watershed (∼ 69 km2) has been delineated and selected as the study zone encompassing two Eddy Covariance (EC) stations 
 							and multi-layer and spatially distributed soil moisture sensors. The watershed divide was extracted using a 30 m resolution
-							 Digital Elevation Model (DEM) from The National Map (3DEP Program - USGS) to derive the Triangular Irregular Network (TIN) 
-							 that the model uses to run. </p>
-
+							 Digital Elevation Model (DEM) to derive the Triangular Irregular Network (TIN) that the model uses to run. </p>
+							  
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
@@ -138,22 +137,63 @@
 						</div>
 					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
+				<!-- Results -->
+					<section id="results" class="three">
 						<div class="container">
 
 							<header>
 								<h2>Results</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>The 2019 simulation results are shown below for the NAM monsoon season and for a rainfall event of August 23, 2019. Currently I am working in the calibration 
+							of the soil and vegetation parameters. 2020 will be use as validation year.
+							 </p>
+							 
+							 
+							 <div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/Rain_Aug23.png" alt="" /></a>
+										<header>
+											<h3>Rainfall Event - Aug 23, 2019</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/SoilMoist_Aug23.png" alt="" /></a>
+										<header>
+											<h3>Degree of Saturation (Soil Moisture) - Aug 23, 2019</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ET_Aug23.png" alt="" /></a>
+										<header>
+											<h3>Evapotranspiration - Aug 23, 2019</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ET_Aug24.png" alt="" /></a>
+										<header>
+											<h3>Evapotranspiration - Aug 24, 2019</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/Subplot_tRIBS_Jo1_NAM.png" alt="" /></a>
+										<header>
+											<h3>Time series of Rainfall, Soil moisture, and ET during NAM of 2019 - ECT Jo1</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/Subplot_tRIBS_Jo1_NAM.png" alt="" /></a>
+										<header>
+											<h3>Time series of Rainfall, Soil moisture, and ET during NAM of 2019 - ECT Jo2</h3>
+										</header>
+									</article>
+								</div>
+							</div>
 
 						</div>
 					</section>
@@ -166,23 +206,15 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+							<p>If you have any doubt, feel free to reach me.</p>
+							
+							<!-- Social Icons -->
+    						<ul class="icons">
+    							<li><a href="https://twitter.com/JorgeA_Mayo" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    							<li><a href="https://www.linkedin.com/in/jamayor/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    							<li><a href="https://github.com/jamayor2" class="icon brands fa-github"><span class="label">Github</span></a></li>
+    							<li><a href="mailto:jamayo@miners.utep.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+    						</ul>
 
 						</div>
 					</section>
@@ -194,7 +226,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Jorge Mayo. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
