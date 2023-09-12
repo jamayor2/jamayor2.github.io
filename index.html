@@ -22,7 +22,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="images/ProfilePicture.jpg" alt="" /></span>
 							<h1 id="title">Jorge A. Mayo</h1>
-							<p>M.Sc. in Environmental Science</p>
+							<p>M.S. in Environmental Science</p>
 							<p>Environmental Engineer</p>
 						</div>
 
@@ -60,9 +60,9 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Jorge A. Mayo</strong>, </h2>
-								<p> A Water Resources Engineer interested in water management, hydrological modeling, remote sensing, 
-									geospatial/visualization applications, and utilizing environmental data to drive decision-making
+								<h2 class="alt"><strong>About Me</strong>, </h2>
+								<p> I am Jorge Mayo, a Water Resources Engineer interested in water management, hydrological modeling, remote sensing, 
+									geospatial/visualization applications, machine learning, and utilizing environmental data to drive decision-making
 									processes.</p>
 							</header>
 
@@ -92,20 +92,20 @@
 							is used to simulate three variables (1) evaporation, (2) transpiration, and (3) surface soil water content at the watershed
 							scale during the North American Monsoon (NAM) season of 2019. </p>
 
-							<p>The Master's Thesis document is available in ProQuest <a href="https://utep.idm.oclc.org/login?url=https://www-proquest-com.utep.idm.oclc.org/dissertations-theses/using-machine-learning-distributed-hydrologic/docview/2861013278/se-2?accountid=7121" target="_blank">(link)</a>.</p>
+							<p>The Master's Thesis document is available in <a href="https://utep.idm.oclc.org/login?url=https://www-proquest-com.utep.idm.oclc.org/dissertations-theses/using-machine-learning-distributed-hydrologic/docview/2861013278/se-2?accountid=7121" target="_blank">ProQuest</a>.</p>
 							  
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/tRIBSFlowchart.jpg" alt="" /></a>
 										<header>
-											<h3>tRIBS Frameworkt</h3>
+											<h3>tRIBS model Framework.</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/Subplot_ECJo1_2019.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/NLCD_2019_North.png" alt="" /></a>
 										<header>
-											<h3>Hydrometeorologival Inputs - ECT Jo1</h3>
+											<h3>NLCD 2019 - Land Cover Map.</h3>
 										</header>
 									</article>
 								</div>
@@ -113,27 +113,28 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/StudyArea_Map.png" alt="" /></a>
 										<header>
-											<h3>Study Area - JER</h3>
+											<h3>Study Area - JER.</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/ParticleSize.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/SSURGO_Polygons.png" alt="" /></a>
 										<header>
-											<h3>SSURGO Soil Map</h3>
+											<h3>SSURGO Soil Map.</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/Albedo_dates.gif" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/Subplot_ECJo1_2019.png" alt="" /></a>
 										<header>
-											<h3>MODIS 500m Albedo, 2019</h3>
+											<h3>Hydrometeorological Inputs for US-Jo1.</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/NDVI_dates.gif" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/Dynamic_Vegetation.png" alt="" /></a>
 										<header>
-											<h3>NDVI 30m Landsat-8, 2019 </h3>
+											<h3>Remotely sensed derived time series of the dynamic vegetation parameters for
+												US-Jo 1(left column) and us-Jo2 (right column). </h3>
 										</header>
 									</article>
 								</div>
@@ -150,51 +151,102 @@
 								<h2>Results</h2>
 							</header>
 
-							<p>The 2019 simulation results are shown below for the NAM monsoon season and for a rainfall event of August 23, 2019. Currently I am working in the calibration 
-							of the soil and vegetation parameters. 2020 will be use as validation year.
-							 </p>
-							 
+							<p>Hourly time series illustrate that tRIBS shows an overestimating response to rainfall pulses as measured by &Theta s at US-Jo1 and underestimating the recision periods at US-Jo2, but a 
+							generalized underestimation of ET (except when rain arrives) while capturing well the diurnal cycles during the whole period at both sites. In general, at an hourly scale, tRIBS outputs 
+							represent the temporal variability of both variables at the measurement sites. However, despite the NSE score showing unsatisfactory results for &Theta s and ET at both sites (NSE &lt 0.4), 
+							the KGE score is equal to or greater than 0.5 for &Theta s, and for ET in US-Jo1, meaning that the model has some level of skill in capturing certain aspects of the observed variability, 
+							but there are still significant discrepancies between the simulated and observed values. <br />
+
+
+							</p>Monthly barplots provides insights into the monthly scale partitioning of components at the US-Jo1 and US-Jo2 sites. At both sites, transpiration dominates the partitioning in July,
+							one month after the monsoon precipitation arrives, helping the plants to develop their canopy and increase transpiration. In the rest of the months, soil evaporation dominates 
+							the partitioning at both sites, with a higher proportion at US-Jo2 explained in terms of the fractional area of vegetation cover at each study site since the vegetation as US-Jo2 is
+							mostly shrub/scrub, leading to higher soil evaporation. In both sites, evaporation from interception accounts for less than 1.5% of the overall partitioning, indicating its minor role 
+							in the system. Comparing precipitation (P) to ET, it can be seen that the proportions are similar and the ET/P ratio for the 2019 NAM season is close to 1 and 0.9, at US-Jo1 and US-Jo2 
+							respectively, indicating that almost all of the precipitation that arrives to the system is returned to the atmosphere as evapotranspiration.  </p>
+
+							
+						
 							 
 							 <div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/Rain_Aug23.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/GB_SoilMap.png" alt="" /></a>
 										<header>
-											<h3>Rainfall Event - Aug 23, 2019</h3>
+											<h3>Enhanced ML SSURGO Soil Map.</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/SoilMoist_Aug23.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/PixelJo1_SWC_Hourly.png" alt="" /></a>
 										<header>
-											<h3>Degree of Saturation (Soil Moisture) - Aug 23, 2019</h3>
+											<h3>Hourly simulations and observations time series of soil moisture at US-Jo1.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/PixelJo1_ET_Hourly.png" alt="" /></a>
+										<header>
+											<h3>Hourly simulations and observations time series of evapotranspiration at US-Jo1.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/Rain_Jun1011.png" alt="" /></a>
+										<header>
+											<h3>Rainfall event across the watershed. The response shows from August 23rd at
+												10:00 to August 24th at 20:00 LST.</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/ET_Aug23.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/Jo1_Monthly_ET.png" alt="" /></a>
 										<header>
-											<h3>Evapotranspiration - Aug 23, 2019</h3>
+											<h3>Partitioning components of ET at monthly time scale at US-Jo1.</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/ET_Aug24.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/PixelJo2_SWC_Hourly.png" alt="" /></a>
 										<header>
-											<h3>Evapotranspiration - Aug 24, 2019</h3>
+											<h3>Hourly simulations and observations time series of soil moisture at US-Jo2.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/PixelJo2_ET_Hourly.png" alt="" /></a>
+										<header>
+											<h3>Hourly simulations and observations time series of evapotranspiration at US-Jo2.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/SM_Jun1011.png" alt="" /></a>
+										<header>
+											<h3>Soil Moisture (Degree of saturation) across the watershed. The response shows
+												from August 23rd at 10:00 to August 24th at 20:00 LST.</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/Subplot_tRIBS_Jo1_NAM.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/Jo2_Monthly_ET.png" alt="" /></a>
 										<header>
-											<h3>Time series of Rainfall, Soil moisture, and ET during NAM of 2019 - ECT Jo1</h3>
+											<h3>Partitioning components of ET at monthly time scale at US-Jo2.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/SWC_Scatters_Hourly.png" alt="" /></a>
+										<header>
+											<h3>Scatter plots of hourly simulations and observations of soil moisture at a.US-Jo1 and b.US-Jo2.</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ET_Scatters_Hourly.png" alt="" /></a>
+										<header>
+											<h3>Scatter plots of hourly simulations and observations of evapotranspiration at a.US-Jo1 and b.US-Jo2.</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/Subplot_tRIBS_Jo1_NAM.png" alt="" /></a>
 										<header>
-											<h3>Time series of Rainfall, Soil moisture, and ET during NAM of 2019 - ECT Jo2</h3>
+											<h3>Evapotranspiration across the watershed. The response shows from August
+												23rd at 10:00 to August 24th at 20:00 LST.</h3>
 										</header>
 									</article>
 								</div>
